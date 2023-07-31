@@ -23,11 +23,15 @@
 </head>
 <body>
     
-    <div class="mImage">
+    <div class="iContainer">
       <img src="./img/Djr_fnf.png" alt="Djr" width="200px" height="200px"></img>
     </div>
     <div class="title">歡迎來到Mire.io</div>
     <div class="subt">Djr Yes</div>
+    <div class="bcontainer">
+      <a class="button" href="https://www.youtube.com/channel/UCToIu4sSLSyXkyTZwLJkeXw">訂閱Djr Leo</a>
+    </div>
+
 </body>
 <script>
 </script>
@@ -39,17 +43,15 @@
     body{
         padding:0;
         margin:0;
+        font-family:Noto Sans TC;
     }
     .title{
       text-align:center;
       font-size:3em;
-      font-family:Noto Sans TC;
-
     }
     .subt{
       text-align:center;
       font-size:2em;
-      font-family:Noto Sans TC;
     }
     img{
       padding: 2em;
@@ -57,5 +59,25 @@
       margin-left: auto;
       margin-right: auto;
       border-radius: 50%;
+    }
+    .bcontainer{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .button{
+      border-radius:5px;
+      text-decoration:none;
+      animation: rainbowT 1s infinite;
+    }
+    .bcontainer{
+      text-align:center;
+      margin:10px;
+    }
+    @keyframes rainbowT{
+	    0%, 100%{color: Crimson;}
+	    20%{color: orange;}
+	    40%{color: yellow;}
+	    60%{color: lime;}
+	    80%{color: MediumBlue;}
     }
 </style>
